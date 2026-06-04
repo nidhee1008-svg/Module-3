@@ -1,4 +1,5 @@
 # Module-3
+
 # 🧹 Strings-Remove Nth Index Character from a String
 
 ## 🎯 Aim
@@ -15,8 +16,30 @@ To write a Python program that accepts a string and removes the character at a s
 8. Print the final result.
 
 ## 💻 Program
-Add Code Here
+
+```python
+def remove(string):
+    n = int(input("Enter the index to remove: "))
+    a = ""
+
+    for i in range(len(string)):
+        if i != n:
+            a = a + string[i]
+
+    return a
+
+string = input("Enter a string: ")
+print("String after removing character:", remove(string))
+```
 
 ## Output
 
+```text
+Enter a string: python
+Enter the index to remove: 2
+String after removing character: pyhon
+```
+
 ## Result
+
+Thus, the Python program to remove the character at a specified index from a string was executed successfully.
